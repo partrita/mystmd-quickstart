@@ -1,6 +1,27 @@
-# How to MyST, without being mystified 🧙
+---
+title: How to MyST, without being mystified 🧙
+subject: Tutorial
+subtitle: Evolve your markdown documents into structured data
+short_title: How to MyST
+authors:
+  - name: Rowan Cockett
+    affiliations:
+      - Executable Books
+      - Curvenote
+    orcid: 0000-0002-7859-8394
+    email: rowan@curvenote.com
+abstract: |
+  We introduce, a set of open-source, community-driven ...
+license: CC-BY-4.0
+exports:
+  - format: typst
+    template: lapreprint-typst
+    output: exports/my-document.pdf
+---
 
-A tutorial to evolve markdown documents and notebooks into structured data
+# MyST 사용법, 미스터리 없이!🧙
+
+마크다운 문서와 노트북을 구조화된 데이터로 변환하는 튜토리얼
 
 **Authors:** Rowan Cockett<sup>1,2</sup> \
 **Affiliations:** <sup>1</sup>Executable Books, <sup>2</sup> Curvenote \
@@ -8,15 +29,15 @@ A tutorial to evolve markdown documents and notebooks into structured data
 
 **Abstract**
 
-We introduce, a set of open-source, community-driven tools for MyST Markdown ([myst.tools](https://myst.tools)) designed for scientific communication, including a powerful authoring framework that supports blogs, online books, scientific papers, reports and journals articles.
+저희는 블로그, 온라인 서적, 과학 논문, 보고서 및 저널 기사를 지원하는 강력한 저작 프레임워크를 포함하여 과학 커뮤니케이션을 위해 설계된 MyST 마크다운([myst.tools](https://myst.tools))용 오픈 소스, 커뮤니티 주도형 도구 세트를 소개합니다.
 
 ## Background
 
-Scientific communication today is designed around print documents and pay-walled access to content. Over the last decade, the open-science movement has accelerated the use of pre-print services and data archives that are vastly improving the accessibility of scientific content. However, these systems are not designed for communicating modern scientific outputs, which encompasses **so much more** than a paper-centric model of the scholarly literature.
+오늘날의 과학 커뮤니케이션은 인쇄 문서와 유료 콘텐츠 액세스를 중심으로 설계되어 있습니다. 지난 10년간 오픈 사이언스 운동은 사전 인쇄 서비스 및 데이터 아카이브의 사용을 가속화하여 과학 콘텐츠의 접근성을 크게 향상시켰습니다. 그러나 이러한 시스템은 학술 문헌의 논문 중심 모델보다 훨씬 더 많은 것을 포함하는 현대 과학적 결과물을 전달하도록 설계되지 않았습니다.
 
-> We believe how we share and communicate scientific knowledge should evolve past the status quo of print-based publishing and all the limitations of paper.
+> 우리는 과학 지식을 공유하고 소통하는 방식이 인쇄 기반 출판의 현상 유지와 종이의 모든 한계를 넘어 진화해야 한다고 믿습니다.
 
-The communication and collaboration tools that we are building in the Project Jupyter are built to follow the FORCE11 recommendations (Bourne _et al._, 2012). Specifically:
+The communication and collaboration tools that we are building in the Project Jupyter are built to follow the FORCE11 recommendations[](doi:10.4230/DAGMAN.1.1.41). Specifically:
 
 1. rethink the unit and form of scholarly publication;
 2. develop tools and technologies to better support the scholarly lifecycle; and
@@ -46,12 +67,14 @@ In our paper we will give an overview of the MyST ecosystem, how to use MyST too
 
 ## Features of MyST
 
-MyST is focused on scientific writing, and ensuring that citations are first class both for writing and for reading (see Figure 1).
+MyST is focused on scientific writing, and ensuring that citations are first class both for writing and for reading (see [](#citations)).
 
-![](./images/citations.png)
-**Figure 1**: Citations are rendered with a popup directly inline.
+:::{figure} ./images/citations.png
+:label: citations
+Citations are rendered with a popup directly inline.
+:::
 
-MyST aims to show as much information in context as possible, for example, Figure 2 shows a reading experience for a referenced equation: you can immediately **click on the reference**, see the equation, all without loosing any context -- ultimately saving you time. Head _et al._ (2021) found that these ideas both improved the overall reading experience of articles as well as allowed researchers to answer questions about an article **26% faster** when compared to a traditional PDF!
+MyST aims to show as much information in context as possible, for example, Figure 2 shows a reading experience for a referenced equation: you can immediately **click on the reference**, see the equation, all without loosing any context -- ultimately saving you time. [](doi:10.1145/3411764.3445648) found that these ideas both improved the overall reading experience of articles as well as allowed researchers to answer questions about an article **26% faster** when compared to a traditional PDF!
 
 ![](./images/equations.gif)
 **Figure 2**: In context cross-references improve the reading experience.

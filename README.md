@@ -14,6 +14,14 @@ The goals of the [quickstart guide](https://myst.tools/docs/mystjs/quickstart) a
 4. Integrate a Jupyter Notebook output into our paper, to improve reproducibility
 5. Publish a website of with our work 🚀
 
+# How to use
+
+```bash
+gh repo clone partrita/mystmd-quickstart
+pixi install
+pixi run myst init
+```
+
 ## Improving Frontmatter and MyST Site
 
 ![](./images/frontmatter-after.png)
